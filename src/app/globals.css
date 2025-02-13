@@ -36,11 +36,45 @@ html,body {
   font-family: "Poppins", Courier, monospace;
 }
 
+@media (max-width: 1024px) {
+  #main {
+    width: 60vw;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #main {
+    width: 80vw;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #main {
+    width: 95vw;
+    height: 80vh;
+    padding: 3%;
+  }
+}
+
 #header {
   text-align: center;
   font-size: 42px;
   font-weight: bold;
   color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  #header {
+   font-size: 32px
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+   font-size: 24px
+  }
 }
 
 #clock-div {
@@ -69,6 +103,30 @@ html,body {
   font-size: 25px;
 }
 
+@media (max-width: 768px) {
+  #break-label,
+  #session-label {
+    font-size: 24px;
+  }
+
+  #break-length,
+  #session-length {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  #break-label,
+  #session-label {
+    font-size: 20px;
+  }
+
+  #break-length,
+  #session-length {
+    font-size: 18px;
+  }
+}
+
 #break-increment,
 #break-decrement,
 #session-increment,
@@ -84,6 +142,21 @@ html,body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 0 1rem;
+}
+
+@media (max-width: 480px) {
+  #break-increment,
+#break-decrement,
+#session-increment,
+#session-decrement {
+  padding: 6px 12px;
+  margin: 0 0 0.5rem;
+}
+
+.arrow-icon {
+  width: 10px;
+  height: 14px;
+}
 }
 
 #break-increment:hover,
@@ -119,6 +192,26 @@ html,body {
   font-size: 30px;
 }
 
+@media (max-width: 768px) {
+  #timer-div {
+    font-size: 26px;
+  }
+
+  #time-left {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  #timer-div {
+    font-size: 22px;
+  }
+
+  #time-left {
+    font-size: 28px;
+  }
+}
+
 #time-left {
   color: var(--primary);
   font-weight: bold;
@@ -129,6 +222,32 @@ html,body {
 text-align: center;
 margin-top: 1rem;
 font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .svg-icon {
+    width: 45px;
+    height: 50px;
+  }
+
+  .reset-btn {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .svg-icon {
+    width: 40px;
+    height: 45px;
+  }
+
+  .reset-btn {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1em;
+  }
 }
 
 .svg-icon {
